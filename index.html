@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Table View</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>To-Do List (Table View)</h2>
+
+        <div class="inputBox">
+            <input type="text" id="taskInput" placeholder="Enter a task..." />
+            <div class="inputBox">
+    
+    <select id="prioritySelect">
+        <option value="High">High</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Low">Low</option>
+    </select>
+
+    <button id="addBtn">Add</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Task</th>
+                    <th>priority</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="taskTable"></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
